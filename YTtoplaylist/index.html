@@ -8,17 +8,20 @@
 </head>
 <body>
 	<script src="script.js"></script>
-	<div id="head">
-		A url generator for Youtube music mixes
-	</div>
-	<div id="urlinput">
-		<div id="inputLable">Youtube url:</div>
-		<input type="text" id="YTurl" name="YTurl">
-		<input type="button" id="run" name="run" value="Go" onclick="YTtoPlaylist()">
-	</div>
-	<div id="output">
-		<div id="outputText"></div>
-		<input type="button" id="reload" name="reload" value="generate next" onclick="window.location.reload()">
+	<div id="content">
+		<div id="head">
+			<div id="title">YT radio generator</div>
+			<div id="descripton">a generator that creates urls for mixes from youtube videos</div>
+		</div>
+		<div id="urlinput">
+			<div id="inputLable">Youtube url:</div>
+			<input type="text" id="YTurl" name="YTurl">
+			<input type="button" id="run" name="run" value="Go" onclick="YTtoPlaylist()">
+		</div>
+		<div id="output">
+			<div id="outputText"></div>
+			<input type="button" id="reload" name="reload" value="generate next" onclick="window.location.reload()">
+		</div>
 	</div>
 </body>
 </html>

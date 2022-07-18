@@ -1,14 +1,16 @@
 function YTtoPlaylist() {
+    let urlIn = document.getElementById('urlinput');
     let urlElement = document.getElementById('YTurl');
-    let output = document.getElementById('outputText');
-    let reloadButton = document.getElementById('reload');
+    let outputTxt = document.getElementById('outputText');
+    let reloadBut = document.getElementById('reload');
     let url = urlElement.value;
     let vidIdStart = 0;
     let vidId = '';
     let playlistUrl = '';
 
     if (url == '' || !url.includes('https://www.youtube.com/watch?v=')) {
-        output.innerHTML = 'please enter a valid url';
+        outputTxt.innerHTML = 'please enter a valid url';
+        outputTxt.style.display = 'inherit';
     } else {
         let i = 0;
         while (vidIdStart == 0) {
@@ -20,7 +22,9 @@ function YTtoPlaylist() {
     vidId = url.substring(vidIdStart, url.length);
     playlistUrl = url + '&list=RD' + vidId + '&start_radio=1';
 
-    output.innerHTML = playlistUrl;
-    reloadButton.style.display = 'inherit';
+    outputTxt.innerHTML = playlistUrl;
+    urlIn.style.display = 'none';
+    outputTxt.style.display = 'inherit';
+    reloadBut.style.display = 'inherit';
     }
 }

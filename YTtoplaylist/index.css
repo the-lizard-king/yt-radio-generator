@@ -1,6 +1,12 @@
 body {
 	margin: 0;
 }
+#content {
+
+}
+#outputText {
+	display: none;
+}
 #reload {
 	display: none;
 }
