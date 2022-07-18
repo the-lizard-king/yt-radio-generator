@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>YT radio generator</title>
+	<link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body>
+	<script src="script.js"></script>
+	<div id="head">
+		A url generator for Youtube music mixes
+	</div>
+	<div id="urlinput">
+		<div id="inputLable">Youtube url:</div>
+		<input type="text" id="YTurl" name="YTurl">
+		<input type="button" id="run" name="run" value="Go" onclick="YTtoPlaylist()">
+	</div>
+	<div id="output">
+		<div id="outputText"></div>
+		<input type="button" id="reload" name="reload" value="generate next" onclick="window.location.reload()">
+	</div>
+</body>
+</html>
