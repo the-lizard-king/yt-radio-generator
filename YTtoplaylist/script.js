@@ -8,7 +8,7 @@ function YTtoPlaylist() {
     let vidId = '';
     let playlistUrl = '';
 
-    if (url == '' || !url.includes('https://www.youtube.com/watch?v=')) {
+    if (url == '' || !url.includes('youtube.com/watch?v=')) {
         outputTxt.innerHTML = 'please enter a valid url';
         outputTxt.style.display = 'inherit';
     } else {
