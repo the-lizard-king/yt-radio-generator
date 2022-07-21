@@ -3,6 +3,7 @@ function YTtoPlaylist() {
     let urlElement = document.getElementById('YTurl');
     let outputTxt = document.getElementById('outputText');
     let reloadBut = document.getElementById('reload');
+    let copyBut = document.getElementById('copy');
     let url = urlElement.value;
     let vidIdStart = 0;
     let vidId = '';
@@ -22,9 +23,23 @@ function YTtoPlaylist() {
     vidId = url.substring(vidIdStart, url.length);
     playlistUrl = url + '&list=RD' + vidId + '&start_radio=1';
 
+    if (playlistUrl.includes('https://')) {
+        outputTxt.innerHTML = playlistUrl;
+        outputTxt.setAttribute('href', playlistUrl);
+    } else {
     outputTxt.innerHTML = playlistUrl;
+    outputTxt.setAttribute('href', 'https://' + playlistUrl);
+    }
+
     urlIn.style.display = 'none';
     outputTxt.style.display = 'inherit';
+    copyBut.style.display = 'inline';
     reloadBut.style.display = 'inherit';
     }
+}
+
+function copyToClipboard() {
+    let outputTxt = document.getElementById('outputText');
+
+    navigator.clipboard.writeText(outputTxt.innerHTML);
 }

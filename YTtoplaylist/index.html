@@ -5,9 +5,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>YT radio generator</title>
 	<link rel="stylesheet" type="text/css" href="index.css">
+	<script src="script.js"></script>
 </head>
 <body>
-	<script src="script.js"></script>
 	<div id="content">
 		<div id="head">
 			<div id="title">YT radio generator</div>
@@ -19,7 +19,8 @@
 			<input type="button" id="run" name="run" value="Go" onclick="YTtoPlaylist()">
 		</div>
 		<div id="output">
-			<div id="outputText"></div>
+			<a id="outputText" href=""></a>
+			<button type="button" id="copy" title="copy to clipboard" onclick="copyToClipboard()"><img id="copyimg" src="clipboard.png"></button>
 			<input type="button" id="reload" name="reload" value="generate next" onclick="window.location.reload()">
 		</div>
 	</div>

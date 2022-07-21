@@ -6,6 +6,16 @@ body {
 }
 #outputText {
 	display: none;
+	float: left;
+}
+#copy {
+	display: none;
+	width: 2.1vw;
+	height: 4vh;
+}
+#copyimg {
+	width: 100%;
+	height: 100%;
 }
 #reload {
 	display: none;
