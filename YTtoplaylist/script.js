@@ -41,5 +41,5 @@ function YTtoPlaylist() {
 function copyToClipboard() {
     let outputTxt = document.getElementById('outputText');
 
-    navigator.clipboard.writeText(outputTxt.innerHTML);
+    navigator.clipboard.writeText(outputTxt.innerText);
 }
