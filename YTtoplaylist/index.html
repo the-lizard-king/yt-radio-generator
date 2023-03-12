@@ -5,12 +5,17 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>YT radio generator</title>
 	<link rel="stylesheet" type="text/css" href="index.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Golos+Text&display=swap" rel="stylesheet">
 	<script src="script.js"></script>
+
 </head>
 <body>
 	<div id="content">
 		<div id="head">
-			<div id="title">YT radio generator</div>
+			<div id="title"><b>YT radio generator</b></div>
+			<br>
 			<div id="descripton">a generator that creates urls for mixes from youtube videos</div>
 		</div>
 		<div id="urlinput">
@@ -19,9 +24,9 @@
 			<input type="button" id="run" name="run" value="Go" onclick="YTtoPlaylist()">
 		</div>
 		<div id="output">
-			<a id="outputText" href=""></a>
 			<button type="button" id="copy" title="copy to clipboard" onclick="copyToClipboard()"><img id="copyimg" src="clipboard.png"></button>
 			<input type="button" id="reload" name="reload" value="generate next" onclick="window.location.reload()">
+			<a id="outputText" href=""></a>
 		</div>
 	</div>
 </body>

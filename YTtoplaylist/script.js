@@ -34,7 +34,9 @@ function YTtoPlaylist() {
     urlIn.style.display = 'none';
     outputTxt.style.display = 'inherit';
     copyBut.style.display = 'inline';
-    reloadBut.style.display = 'inherit';
+    reloadBut.style.display = 'inline-block';
+    content.style.marginLeft = '35vw';
+    content.style.marginRight = '35vw';
     }
 }
 

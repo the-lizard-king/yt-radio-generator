@@ -2,7 +2,17 @@ body {
 	margin: 0;
 }
 #content {
-
+	margin-top: 30vh;
+	margin-left: 40vw;
+	margin-right: 40vw;
+	width: fit-content;
+	text-align: center;
+	font-family: 'Golos Text', sans-serif;
+	background-color: rgba(0, 151, 167, 1.0);
+	border-radius: 1vw;
+}
+#title {
+	font-size: x-large;
 }
 #outputText {
 	display: none;
@@ -16,6 +26,7 @@ body {
 #copyimg {
 	width: 100%;
 	height: 100%;
+	display: inline-block;
 }
 #reload {
 	display: none;
